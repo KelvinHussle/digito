@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+         conditions:
+         min-width: starting from
+         max-width: up to
+         We design from the smallest(mobile device screen) to the largest (ipad)
+
+         Common screen size in px;
+         -<481px: Mobile devices
+         481px-768px: Tablet, iPad
+         768px-1024px: Small screen laptops
+         1025px-1200px: Large screen desktops
+         1200px> : Extra large screen/ TV
+           @media media type and (condition:breakpoint){
+            css rules
+        }
+        */
+        body{
+            background-color:white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        nav{
+            display: grid;
+            background-color: black;
+            place-content: center;
+            width:100%;
+        }
+        a{
+            text-decoration: none;
+            font-size: 15px;
+            color:white;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            justify-content:flex-start;
+        }
+        .list{
+            border: 1px;
+            border-style: solid;
+            padding:5px;
+            margin:5px;
+        }
+        
+        @media screen and (min-width:576px){
+            body{
+                background-color: green;
+                color:black;
+            }
+        }
+
+        @media screen and (min-width:768px){
+            body{
+                background-color: blue;
+                color:white;
+            }
+            .container{
+            display:flex;
+            flex-direction: row;
+        }
+             .list{
+                width:33.3;
+             }
+        }
+        @media screen and (min-width:992px){
+            body{
+                background-color: purple;
+                color:white;     
+            }
+            .container{
+            display:flex;
+            flex-direction: row;
+        }
+        .list{
+                width:33.3;
+             }
+        }
+        @media screen and (min-width:1024px){
+            body{
+                background-color: black;
+                color:white;
+            }
+            .container{
+            display:flex;
+            flex-direction: row;
+        }
+        .list{
+                width:33.3;
+             }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="media queries.html">Home</a>
+    </nav>
+    <main>
+        <div class="container">
+        <div class="list">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut reprehenderit adipisci obcaecati nihil qui quasi facere nam magnam quos!
+            </p>
+        </div>
+        <div class="list">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia! Totam ducimus necessitatibus tempora vel quas distinctio magnam soluta corporis.</p>
+        </div>
+        <div class="list">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dolores mollitia impedit commodi, amet esse deleniti dolor fuga fugit cum?
+            </p>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
