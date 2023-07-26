@@ -1,0 +1,12 @@
+Kevin digito portfolio website
+requirement;
+-Responsiveness to small screen and large screen devices.
+-Navigation bar should contain
+(Home,About me,contact,Hire Me) 
+-It should contain social media links and icons,
+(whatsapp, facebook, twitter, instagram)
+-It should contain only White and Black color
+-The Website should be minimalist and clean
+-It should have image area 
+-It should have short description area about the developer
+-The Website has to be backed up in Github and hosted through gitpages 
